@@ -23,6 +23,6 @@ func htmlVsPlain(w http.ResponseWriter, r *http.Request){
 }
 
 func main() {
-	http.HandleFunc("/hp",htmlVsPlain)
+	http.HandleFunc("/",htmlVsPlain)
 	http.ListenAndServe("",nil)
 }
